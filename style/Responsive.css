@@ -1,0 +1,29 @@
+
+body {
+    background-color: rgb(67, 67, 67);
+}
+
+
+@media (min-width: 320px) and (max-width: 767px){ 
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .container-hp {
+        background-color: rgb(255, 255, 255);
+        width: 767%;
+        height: 100%;
+    }
+}
+
+
+.container-hp {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    max-width: 767px;
+    height: auto;
+    
+}
+
