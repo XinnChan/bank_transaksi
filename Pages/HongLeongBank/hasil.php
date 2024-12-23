@@ -24,7 +24,7 @@ $jumlah = $_POST['jumlah'];
   <div class="container-hp  border border-dark shadow-lg text-center" style="height: 900px;">
     <div class="d-flex align-items-center justify-content-between m-5">
             <img src="../../image/HLB.webp" class="w-50 " alt="LogoBankHongLeong" />
-            <img src="../../image/HLIB.png" class="w-50 position-relative"  alt="LogoBankHongLeongIslam" />
+            <img src="../../image/hm.png" class="w-50 position-relative"  alt="LogoBankHongLeongIslam" />
 </div>
 <!-- list bank -->
 <div class="container-lg">
@@ -46,7 +46,7 @@ $jumlah = $_POST['jumlah'];
       <td style="position:relative; left: 10%;"><div style=""> <?php 
               date_default_timezone_set('Asia/Jakarta');
                 $waktu_indonesia = date(' H:i:s A');
-               echo strftime('%d %b %Y, %H:%M') . $waktu_indonesia; ?></div></td>
+               echo date('d M Y, H:i') . $waktu_indonesia; ?></div></td>
     </tr>
 
     <tr class="text-start " style="font-size: 10px;">
