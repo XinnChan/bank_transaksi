@@ -6,7 +6,7 @@ $number_account = $_POST['number_account'];
 $pilih = $_POST['pilih'];
 $reference = $_POST['reference'];
 $description = $_POST['description'];
-$jumlah = $_POST['jumlah'];
+$jumlah = $_POST['jumlah']; 
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ $jumlah = $_POST['jumlah'];
               <div class="m-2 mm-2 ms-4 me-5"style="color: #939393; position:relative;;font-family:'Poppins',sans-serif; top: -25px  ;font-size: 10px;"><?php 
               date_default_timezone_set('Asia/Jakarta');
                 $waktu_indonesia = date(' H:i:s A');
-               echo strftime('%d %b %Y, %H:%M') . $waktu_indonesia; ?>
+               echo date('d M Y, H:i') . $waktu_indonesia; ?>
                </div>
               </div>
 </div>

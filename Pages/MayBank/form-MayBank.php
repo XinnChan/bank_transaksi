@@ -12,22 +12,24 @@
     <div class="container-hp border border-dark shadow-lg text-left">
       <div class="container-lg">
       <div class="logo-bank">
-        <img src="../../image/MayBank.png" class="w-100 position-relative" style="margin-top: -60px;" alt="Logo-BankIslam">
+        <img src="../../image/MayBank.png" class="w-100 " style="position: relative; margin-top: -70px"  alt="Logo-BankIslam">
       </div>
       <div class="text d-flex align-items-center">
 <div  style="background-color: #1664BC; width:4em; height:0.2em; border-radius: 10px;"></div>&nbsp;&nbsp;&nbsp;<h5 style="color: #1664BC; font-family: 'Poppins',sans-serif ; font-weight: bold;" class="text-1xl">BANK MAYBANK </h5>
       </div>
     <!-- form input data ke json  -->
-      <form action="hasil.php" method="post" class="container-lg " >
+      <form action="hasil.php" method="post"  class="container-lg " id="validation" autocomplete="off"  >
+
         <label for="inputNama" class="form-label text-left fw-bold text-3xl" style="font-family: 'Poppins',sans-serif">Nama Penerima</label>
-        <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama Penerima"/>
+        <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama Penerima" autofocus required oninvalid="this.setCustomValidity('ini belum di isi !!')" />
+      
         <label for="inputNumber" class="form-label text-left fw-bold text-3xl" style="font-family: 'Poppins',sans-serif">Number Account</label>
-        <input type="text" id="number" name="number_account" class="form-control" placeholder="Account Number"/>
+        <input type="number" id="number" name="number_account" class="form-control" placeholder="Account Number" required oninvalid="this.setCustomValidity('ini belum di isi !!')"/>
         <label for="PilihBank" class="text-left text-3xl fw-bold" style="font-family:'Poppins',sans-serif">Pilih Bank</label>
         <!-- input pilihan bank -->
         <div class="button-dropdown mt-2 m-1">
-        <select name="pilih" class="btn btn-primary w-100 active"  id="cars">
-          <option >Pilih Bank</option>
+        <select name="pilih" class="btn btn-primary w-100 active"  id="cars" required oninvalid="this.setCustomValidity('ini belum di isi !!')">
+          <option>Pilih Bank</option>
           <option type="text"  value="AmbangGroup" >AmbangGroup</option>
           <option type="text"  value="BankRakyat">BankRakyat</option>
           <option type="text"  value="BankIslam">BankIslam</option>
@@ -39,11 +41,11 @@
 <!-- akhir input -->
         </div>
         <label for="references" class="text-3xl fw-bold " style="font-family:'Poppins',sans-serif">References</label>
-        <input type="text" class="form-control" name="reference" placeholder="Reference Transaction" />
+        <input type="text" class="form-control" name="reference" placeholder="Reference Transaction" required oninvalid="this.setCustomValidity('ini belum di isi !!')" />
         <label for="description" class="text-3xl fw-bold " style="font-family: 'Poppins',sans-serif;" >Description</label>
   <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" name="description" placeholder="Enter Description" ></textarea>
   <label for="jumlahrm" class="text-3xl fw-bold" style="font-family: 'Poppins',sans-serif;">Jumlah RM</label>
-  <input type="text" class="form-control" name="jumlah" placeholder="Total Transfer Min 1000" />
+  <input type="number" min="1000" max="10000000000" class="form-control" name="jumlah" placeholder="Total Transfer Min 1000" required oninvalid="this.setCustomValidity('ini belum di isi !!')" />
   <button type="submit" name="submit" value="submit" class="btn btn-primary w-50 mt-2">Submit</button>
       </form>
     <div class="gif">
