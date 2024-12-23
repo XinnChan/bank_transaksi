@@ -24,19 +24,19 @@ $jumlah = $_POST['jumlah'];
 
   <div class="container-lg d-flex justify-content-center align-items-center ">
 <img src="../../image/bg.jpg" class="position-absolute " width="283" style="z-index: -1x; top: 10px"  alt="BrimoBank" />
-<div class="isi" style="z-index: 1; margin-top: 130px; font-size: 11px;">
+<div class="isi" style="z-index: 1; margin-top: 130px; font-size: 9px;">
             <table class="row align-items-start">
                <tbody>
                 <tr>
                   <td><div class="text-start position-relative" style="top: -9px">Tanggal</div></td>
-                  <td><div class="text-end ms-4 fw-bold"><?php 
+                  <td><div class="text-end ms-5 fw-bold" ><?php 
               date_default_timezone_set('Asia/Jakarta');
                 $waktu_indonesia = date(' H:i:s A');
-               echo date('d F Y'). "<br/>". $waktu_indonesia; ?></div></td>
+               echo date('d M Y, H:i') . $waktu_indonesia; ?></div></td>
                 </tr>
                 <tr>
                   <td><div class="text-start position-relative" >Nomor Referensi</div></td>
-                  <td><div class="text-end ms-4 fw-bold"><?php 
+                  <td><div class="text-end ms-5 fw-bold"><?php 
               echo "$reference"; ?></div></td>
                 </tr>
                </tbody>
@@ -47,29 +47,29 @@ $jumlah = $_POST['jumlah'];
                <tbody>
                 <tr>
                   <td><div class="text-start position-relative" style="top: -9px">Sumber Dana</div></td>
-                  <td><div class="text-end ms-5 fw-bold"><?php
+                  <td><div class="text-end  fw-bold" style="margin-left: 70px;" ><?php
                    echo "ELA MARISA <br /> 0065 **** **** 531"  
                   ?></div></td>
                 </tr>
                 <tr>
                   <td><div class="text-start position-relative" >Jenis Transaksi</div></td>
-                  <td><div class="text-end ms-5 fw-bold"><?php 
+                  <td><div class="text-end  fw-bold"><?php 
               echo "Transfer Bank BRI"; ?></div></td>
                 </tr>
 
                 <tr>
                   <td><div class="text-start position-relative" >Bank Tujuan</div></td>
-                  <td><div class="text-end ms-5 fw-bold"><?php 
+                  <td><div class="text-end  fw-bold"><?php 
               echo "$pilih"; ?></div></td>
                 </tr>
                 <tr>
                   <td><div class="text-start position-relative" >Nomor Tujuan</div></td>
-                  <td><div class="text-end ms-5 fw-bold"><?php 
+                  <td><div class="text-end  fw-bold"><?php 
               echo "$number_account"; ?></div></td>
                 </tr>
                 <tr>
                   <td><div class="text-start position-relative" >Nama Tujuan</div></td>
-                  <td><div class="text-end ms-5 fw-bold"><?php 
+                  <td><div class="text-end  fw-bold"><?php 
               echo "$nama"; ?></div></td>
                 </tr>
                 <tr>
