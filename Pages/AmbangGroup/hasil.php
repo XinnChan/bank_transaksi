@@ -64,7 +64,7 @@ $jumlah = $_POST['jumlah'];
       <td style="position:relative; left: 10%; font-family:'Poppins',sans-serif ; font-weight:600 ; font-size: 10px ;">  <div style="color: #000000;font-size: 10px ;"><?php 
               date_default_timezone_set('Asia/Jakarta');
                 $waktu_indonesia = date(' H:i:s A');
-               echo strftime('%d %b %Y, %H:%M') . $waktu_indonesia; ?>
+               echo date('d M Y, H:i') . $waktu_indonesia; ?>
                </div></div> </td>
     </tr>
 
